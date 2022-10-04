@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h1>CADASTRO GERAL</h1>
+    <form action="" id="formulario" method="POST" name="formulario">
+    <legend> Cadastro Geral </legend>
+    <div class="colunas">
+        <div class="input-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu primeiro nome!"/>
+        </div>
+
+        <div class="input-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira seu sobrenome!"/>
+        </div>
+    </div>
+    <div class="colunas">
+        <div class="input-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone"/>
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu email"/>
+        </div>
+    </div>
+    <div class="colunas">
+        <div class="input-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Insira sua senha!"/>
+        </div>
+
+        <div class="input-group">
+            <label for="confirmarsenha">Confirmar senha:</label>
+            <input type="password" id="confirmarsenha" name="confirmarsenha" placeholder="Repita sua senha!"/>
+        </div>
+    </div>
+    <div class="colunas">
+        <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="">Informar...</option>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="x">Não Informar</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="newsletter">Newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter"/>
+            <small>Desejo receber novidades</small>
+        </div>
+    </div>
+    <div class="rodape">
+        <button type="button" class="botao" onclick="validar()">Enviar</button>
+    </div>
+    </form>
+    <script src="js/formulario.js" >
+    
+</body>
+</html>
